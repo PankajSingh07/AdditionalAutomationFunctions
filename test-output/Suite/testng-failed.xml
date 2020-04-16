@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.automation.HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="experiences"/>
+          <include name="products"/>
+          <include name="videos"/>
+          <include name="tools"/>
+          <include name="implicitWait"/>
+          <include name="search"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- com.automation.HomePage -->
+      <class name="com.automation.IframeHandling">
+        <methods>
+          <include name="iframe"/>
+          <include name="teardown"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- com.automation.IframeHandling -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
