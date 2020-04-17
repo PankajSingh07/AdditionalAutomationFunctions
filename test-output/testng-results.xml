@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80828" started-at="2020-04-17T11:53:31 IST" finished-at="2020-04-17T11:54:51 IST">
+  <suite name="Default suite" duration-ms="30941" started-at="2020-04-17T12:31:37 IST" finished-at="2020-04-17T12:32:08 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80828" started-at="2020-04-17T11:53:31 IST" finished-at="2020-04-17T11:54:51 IST">
-      <class name="com.automation.OrderPlacedE2E">
-        <test-method status="PASS" signature="browserInvoke()[pri:0, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="browserInvoke" is-config="true" duration-ms="4492" started-at="2020-04-17T11:53:31 IST" finished-at="2020-04-17T11:53:35 IST">
+    <test name="Default test" duration-ms="30941" started-at="2020-04-17T12:31:37 IST" finished-at="2020-04-17T12:32:08 IST">
+      <class name="com.automation.WindowHandling">
+        <test-method status="PASS" signature="driverSetup()[pri:0, instance:com.automation.WindowHandling@10bbd20a]" name="driverSetup" is-config="true" duration-ms="6813" started-at="2020-04-17T12:31:37 IST" finished-at="2020-04-17T12:31:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserInvoke -->
-        <test-method status="PASS" signature="login()[pri:1, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="login" duration-ms="35232" started-at="2020-04-17T11:53:35 IST" finished-at="2020-04-17T11:54:10 IST">
+        </test-method> <!-- driverSetup -->
+        <test-method status="PASS" signature="windowhandle()[pri:0, instance:com.automation.WindowHandling@10bbd20a]" name="windowhandle" duration-ms="23334" started-at="2020-04-17T12:31:44 IST" finished-at="2020-04-17T12:32:07 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="purchase()[pri:2, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="purchase" duration-ms="22415" started-at="2020-04-17T11:54:10 IST" finished-at="2020-04-17T11:54:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchase -->
-        <test-method status="PASS" signature="placingorder()[pri:3, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="placingorder" duration-ms="17849" started-at="2020-04-17T11:54:33 IST" finished-at="2020-04-17T11:54:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- placingorder -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="teardown" is-config="true" duration-ms="774" started-at="2020-04-17T11:54:51 IST" finished-at="2020-04-17T11:54:51 IST">
+        </test-method> <!-- windowhandle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automation.WindowHandling@10bbd20a]" name="teardown" is-config="true" duration-ms="726" started-at="2020-04-17T12:32:07 IST" finished-at="2020-04-17T12:32:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.automation.OrderPlacedE2E -->
+      </class> <!-- com.automation.WindowHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

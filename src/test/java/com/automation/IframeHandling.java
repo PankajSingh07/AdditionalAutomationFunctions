@@ -2,30 +2,16 @@ package com.automation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.utils.Base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class IframeHandling {
 
-//Implementing Action class and iframe method.
+public class IframeHandling extends Base{
 
-	static WebDriver driver;
-
-	@BeforeClass
-	public void driverSetup() {
-
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-
-	}
-
+		
 	@Test(priority = 1)
 	public void login() throws InterruptedException {
 
@@ -73,9 +59,4 @@ public class IframeHandling {
 
 	}
 
-	@AfterClass
-	public void teardown() {
-		driver.quit();
 	}
-
-}

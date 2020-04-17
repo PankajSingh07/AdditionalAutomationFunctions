@@ -2,25 +2,11 @@ package com.automation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.utils.Base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class WindowHandling {
-
-	static WebDriver driver;
-
-	@BeforeClass
-	public void driverSetup() {
-
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-
-	}
+public class WindowHandling extends Base{
 
 	@Test
 	public void windowhandle() throws InterruptedException {
@@ -52,11 +38,6 @@ public class WindowHandling {
 		Thread.sleep(1000);
 		jse.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
 
-	}
-	
-	@AfterClass
-	public void teardown() {
-		driver.quit();
 	}
 
 }

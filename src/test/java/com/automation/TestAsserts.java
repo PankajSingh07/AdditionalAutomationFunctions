@@ -1,30 +1,17 @@
 package com.automation;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.utils.Base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 //Implemented types of Assertions
 
-public class TestAsserts {
+public class TestAsserts extends Base{
 	
-static WebDriver driver;
-	
-	@BeforeClass
-	public void setup() {
-		
-	
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-	}
-	
-	
+
 	@Test
 	public void login() throws InterruptedException
 	{
@@ -66,10 +53,5 @@ static WebDriver driver;
 		 	 		
 	}
 	
-		@AfterClass
-		public void teardown() {
-		driver.quit();
-		}
-		
 	}
 	

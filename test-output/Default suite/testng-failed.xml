@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.SearchFeature">
+      <class name="com.automation.IframeHandling">
         <methods>
-          <include name="search1"/>
+          <include name="iframe"/>
           <include name="teardown"/>
           <include name="driverSetup"/>
         </methods>
-      </class> <!-- com.automation.SearchFeature -->
+      </class> <!-- com.automation.IframeHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

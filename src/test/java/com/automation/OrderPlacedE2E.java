@@ -3,28 +3,16 @@ package com.automation;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import com.utils.Base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class OrderPlacedE2E {
+public class OrderPlacedE2E extends Base{
 
-	static WebDriver driver;
-
-	@BeforeClass
-	public void browserInvoke() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-
-	}
-
+	
 	@Test(priority = 1)
 	public void login() throws InterruptedException {
 		driver.manage().window().maximize();
@@ -133,9 +121,5 @@ public class OrderPlacedE2E {
 
 	}
 
-	@AfterClass
-	public void teardown() {
-		driver.quit();
-	}
 
 }
