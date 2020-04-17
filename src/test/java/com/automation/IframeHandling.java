@@ -60,15 +60,11 @@ public class IframeHandling {
 		driver.findElement(By.xpath("//a[@class='toolbar-icon toolbar-icon-node-add-page']")).click();
 		driver.findElement(By.xpath("//input[@id='edit-title-0-value']")).sendKeys("Testing");
 
-		Thread.sleep(2000);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,1000)");
 
 		WebElement element = driver.findElement(By.xpath("//iframe[@class='cke_wysiwyg_frame cke_reset']"));
 		driver.switchTo().frame(element);
-		
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,1000)");
-		Thread.sleep(2000);
-
 		driver.findElement(By.xpath("//body")).sendKeys("Entering text in the iframe body");
 		driver.switchTo().defaultContent();
 

@@ -1,69 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49323" started-at="2020-04-16T11:40:22 IST" finished-at="2020-04-16T11:41:11 IST">
+  <suite name="Default suite" duration-ms="80828" started-at="2020-04-17T11:53:31 IST" finished-at="2020-04-17T11:54:51 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49323" started-at="2020-04-16T11:40:22 IST" finished-at="2020-04-16T11:41:11 IST">
-      <class name="com.automation.LMX">
-        <test-method status="PASS" signature="driverSetup()[pri:0, instance:com.automation.LMX@131276c2]" name="driverSetup" is-config="true" duration-ms="4715" started-at="2020-04-16T11:40:22 IST" finished-at="2020-04-16T11:40:27 IST">
+    <test name="Default test" duration-ms="80828" started-at="2020-04-17T11:53:31 IST" finished-at="2020-04-17T11:54:51 IST">
+      <class name="com.automation.OrderPlacedE2E">
+        <test-method status="PASS" signature="browserInvoke()[pri:0, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="browserInvoke" is-config="true" duration-ms="4492" started-at="2020-04-17T11:53:31 IST" finished-at="2020-04-17T11:53:35 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverSetup -->
-        <test-method status="PASS" signature="implicitWait()[pri:0, instance:com.automation.LMX@131276c2]" name="implicitWait" is-config="true" duration-ms="7" started-at="2020-04-16T11:40:27 IST" finished-at="2020-04-16T11:40:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- implicitWait -->
-        <test-method status="PASS" signature="login()[pri:1, instance:com.automation.LMX@131276c2]" name="login" duration-ms="15383" started-at="2020-04-16T11:40:27 IST" finished-at="2020-04-16T11:40:42 IST">
+        </test-method> <!-- browserInvoke -->
+        <test-method status="PASS" signature="login()[pri:1, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="login" duration-ms="35232" started-at="2020-04-17T11:53:35 IST" finished-at="2020-04-17T11:54:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="implicitWait()[pri:0, instance:com.automation.LMX@131276c2]" name="implicitWait" is-config="true" duration-ms="6" started-at="2020-04-16T11:40:42 IST" finished-at="2020-04-16T11:40:42 IST">
+        <test-method status="PASS" signature="purchase()[pri:2, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="purchase" duration-ms="22415" started-at="2020-04-17T11:54:10 IST" finished-at="2020-04-17T11:54:33 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- implicitWait -->
-        <test-method status="PASS" signature="products()[pri:2, instance:com.automation.LMX@131276c2]" name="products" duration-ms="4185" started-at="2020-04-16T11:40:42 IST" finished-at="2020-04-16T11:40:46 IST">
+        </test-method> <!-- purchase -->
+        <test-method status="PASS" signature="placingorder()[pri:3, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="placingorder" duration-ms="17849" started-at="2020-04-17T11:54:33 IST" finished-at="2020-04-17T11:54:51 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- products -->
-        <test-method status="PASS" signature="implicitWait()[pri:0, instance:com.automation.LMX@131276c2]" name="implicitWait" is-config="true" duration-ms="15" started-at="2020-04-16T11:40:46 IST" finished-at="2020-04-16T11:40:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- implicitWait -->
-        <test-method status="PASS" signature="experiences()[pri:3, instance:com.automation.LMX@131276c2]" name="experiences" duration-ms="4186" started-at="2020-04-16T11:40:46 IST" finished-at="2020-04-16T11:40:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- experiences -->
-        <test-method status="PASS" signature="implicitWait()[pri:0, instance:com.automation.LMX@131276c2]" name="implicitWait" is-config="true" duration-ms="6" started-at="2020-04-16T11:40:50 IST" finished-at="2020-04-16T11:40:50 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- implicitWait -->
-        <test-method status="PASS" signature="videos()[pri:4, instance:com.automation.LMX@131276c2]" name="videos" duration-ms="4137" started-at="2020-04-16T11:40:50 IST" finished-at="2020-04-16T11:40:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- videos -->
-        <test-method status="PASS" signature="implicitWait()[pri:0, instance:com.automation.LMX@131276c2]" name="implicitWait" is-config="true" duration-ms="24" started-at="2020-04-16T11:40:55 IST" finished-at="2020-04-16T11:40:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- implicitWait -->
-        <test-method status="PASS" signature="tools()[pri:5, instance:com.automation.LMX@131276c2]" name="tools" duration-ms="4129" started-at="2020-04-16T11:40:55 IST" finished-at="2020-04-16T11:40:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tools -->
-        <test-method status="PASS" signature="implicitWait()[pri:0, instance:com.automation.LMX@131276c2]" name="implicitWait" is-config="true" duration-ms="14" started-at="2020-04-16T11:40:59 IST" finished-at="2020-04-16T11:40:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- implicitWait -->
-        <test-method status="PASS" signature="search()[pri:6, instance:com.automation.LMX@131276c2]" name="search" duration-ms="11637" started-at="2020-04-16T11:40:59 IST" finished-at="2020-04-16T11:41:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automation.LMX@131276c2]" name="teardown" is-config="true" duration-ms="800" started-at="2020-04-16T11:41:10 IST" finished-at="2020-04-16T11:41:11 IST">
+        </test-method> <!-- placingorder -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automation.OrderPlacedE2E@4e7dc304]" name="teardown" is-config="true" duration-ms="774" started-at="2020-04-17T11:54:51 IST" finished-at="2020-04-17T11:54:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.automation.LMX -->
+      </class> <!-- com.automation.OrderPlacedE2E -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

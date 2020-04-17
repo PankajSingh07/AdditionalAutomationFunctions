@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="prodEnv.OrderPlaced">
+      <class name="com.automation.SearchFeature">
         <methods>
-          <include name="browserInvoke"/>
-          <include name="placingorder"/>
+          <include name="search1"/>
+          <include name="teardown"/>
+          <include name="driverSetup"/>
         </methods>
-      </class> <!-- prodEnv.OrderPlaced -->
+      </class> <!-- com.automation.SearchFeature -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

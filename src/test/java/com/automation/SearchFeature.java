@@ -7,22 +7,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 
-public class SearchFeature extends LMX {
+import com.utils.Base;
 
-	@BeforeTest
-	public void inherit() throws InterruptedException {
-		SearchFeature sf = new SearchFeature();
-		sf.driverSetup();
-		sf.implicitWait();
-		sf.login();
-	}
+
+public class SearchFeature extends Base {
 
 	@Test
 	public void search1() throws InterruptedException {
+		
+	
+
+		LMX lm = new LMX();
+		lm.login();
 
 		WebElement w = driver.findElement(By.xpath("//input[@title='Search']"));
 		w.sendKeys("THE PERFECTING PRIMER");
@@ -58,10 +57,9 @@ public class SearchFeature extends LMX {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@class='learning-wrapper']/div/ul/li[5]/button")).click();
 		Thread.sleep(1000);
+		
+
+
 	}
 
-	@AfterClass
-	public void teardown() {
-		driver.quit();
-	}
 }
