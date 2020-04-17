@@ -115,21 +115,21 @@ public class OrderPlacedE2E {
 		driver.findElement(By.xpath("//button[@name='processCarrier']//span[contains(text(),'Proceed to checkout')]")).click();
 
 		driver.findElement(By.xpath("//a[@class='bankwire']")).click();
-//		driver.findElement(By.xpath("//span[contains(text(),'I confirm my order')]")).click();
-//		Thread.sleep(1000);
-//		
-//		String order = driver.findElement(By.xpath("//strong[contains(text(),'Your order on My Store is complete.')]")).getText();
-//		System.out.println(order);
-//		
-//		String ExpectedTitle = "Your order on My Store is complete.";
-//		Assert.assertEquals(order, ExpectedTitle);
-//		System.out.println("Order Placed Successfully");
-//		
-//		driver.findElement(By.xpath("//i[@class='icon-chevron-left']")).click();
-//		jse.executeScript("window.scrollBy(0,500)");
-//
-//		Thread.sleep(2000);
-//		driver.findElement(By.xpath("//a[@class='logout']")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'I confirm my order')]")).click();
+		Thread.sleep(1000);
+		
+		String order = driver.findElement(By.xpath("//strong[contains(text(),'Your order on My Store is complete.')]")).getText();
+		System.out.println(order);
+		
+		String ExpectedTitle = "Your order on My Store is complete.";
+		Assert.assertEquals(order, ExpectedTitle);
+		System.out.println("Order Placed Successfully");
+		
+		driver.findElement(By.xpath("//i[@class='icon-chevron-left']")).click();
+		jse.executeScript("window.scrollBy(0,500)");
+
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[@class='logout']")).click();
 
 	}
 
