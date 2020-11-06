@@ -19,9 +19,9 @@ public class SearchFeature extends Base {
 	public void search1() throws InterruptedException {
 		
 	
-
-		LMX lm = new LMX();
-		lm.login();
+//		LMX lm = new LMX();
+//		lm.login();
+		
 
 		WebElement w = driver.findElement(By.xpath("//input[@title='Search']"));
 		w.sendKeys("THE PERFECTING PRIMER");

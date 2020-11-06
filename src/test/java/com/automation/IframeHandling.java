@@ -18,7 +18,7 @@ public class IframeHandling extends Base{
 		driver.manage().window().maximize();
 
 		driver.get(" https://ezcontent.srijan.net/user/login");
-		driver.findElement(By.id("edit-name")).sendKeys("editor@srijan.net");
+		driver.findElement(By.id("edit-name")).sendKeys("editor@example.com");
 		driver.findElement(By.id("edit-pass")).sendKeys("editor@123");
 		driver.findElement(By.id("edit-submit")).click();
 
@@ -50,8 +50,9 @@ public class IframeHandling extends Base{
 		jse.executeScript("window.scrollBy(0,1000)");
 
 		WebElement element = driver.findElement(By.xpath("//iframe[@class='cke_wysiwyg_frame cke_reset']"));
-		driver.switchTo().frame(element);
-		driver.findElement(By.xpath("//body")).sendKeys("Entering text in the iframe body");
+		driver.switchTo().frame(element); 
+		System.out.println("I'n in the frame");
+		driver.findElement(By.xpath("//body//p")).sendKeys("Entering text in the iframe body");
 		driver.switchTo().defaultContent();
 
 		Thread.sleep(1000);

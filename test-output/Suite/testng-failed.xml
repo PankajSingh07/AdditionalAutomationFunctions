@@ -25,18 +25,25 @@
     <classes>
       <class name="com.automation.OrderPlacedE2E">
         <methods>
-          <include name="browserInvoke"/>
           <include name="login"/>
-          <include name="teardown"/>
           <include name="purchase"/>
           <include name="placingorder"/>
+          <include name="teardown"/>
+          <include name="driverSetup"/>
         </methods>
       </class> <!-- com.automation.OrderPlacedE2E -->
+      <class name="com.automation.WindowHandling">
+        <methods>
+          <include name="windowhandle"/>
+          <include name="teardown"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- com.automation.WindowHandling -->
       <class name="com.automation.TestAsserts">
         <methods>
-          <include name="teardown"/>
           <include name="login"/>
-          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="driverSetup"/>
         </methods>
       </class> <!-- com.automation.TestAsserts -->
       <class name="com.automation.IframeHandling">

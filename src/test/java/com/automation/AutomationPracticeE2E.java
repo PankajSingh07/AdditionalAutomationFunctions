@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import com.utils.Base;
 
 
-public class OrderPlacedE2E extends Base{
+public class AutomationPracticeE2E extends Base{
 
 	
 	@Test(priority = 1)
@@ -22,7 +22,8 @@ public class OrderPlacedE2E extends Base{
 		driver.findElement(By.xpath("//a[@class='login']")).click();
 
 		Thread.sleep(2000);
-
+		
+				
 		driver.findElement(By.id("email")).sendKeys("testautomation789@gmail.com");
 		driver.findElement(By.id("passwd")).sendKeys("zxcvbnm123");
 		driver.findElement(By.id("SubmitLogin")).click();
@@ -42,7 +43,7 @@ public class OrderPlacedE2E extends Base{
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,500)");
-
+		
 		driver.findElement(By.xpath("//span[contains(text(),'Home')]")).click();
 
 		WebElement act = driver.findElement(By.xpath("//a[@class='sf-with-ul'][contains(text(),'Women')]"));
@@ -106,18 +107,18 @@ public class OrderPlacedE2E extends Base{
 		driver.findElement(By.xpath("//span[contains(text(),'I confirm my order')]")).click();
 		Thread.sleep(1000);
 		
-		String order = driver.findElement(By.xpath("//strong[contains(text(),'Your order on My Store is complete.')]")).getText();
-		System.out.println(order);
-		
-		String ExpectedTitle = "Your order on My Store is complete.";
-		Assert.assertEquals(order, ExpectedTitle);
-		System.out.println("Order Placed Successfully");
-		
-		driver.findElement(By.xpath("//i[@class='icon-chevron-left']")).click();
-		jse.executeScript("window.scrollBy(0,500)");
-
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[@class='logout']")).click();
+//		String order = driver.findElement(By.xpath("//strong[contains(text(),'Your order on My Store is complete.')]")).getText();
+//		System.out.println(order);
+//		
+//		String ExpectedTitle = "Your order on My Store is complete.";
+//		Assert.assertEquals(order, ExpectedTitle);
+//		System.out.println("Order Placed Successfully");
+//		
+//		driver.findElement(By.xpath("//i[@class='icon-chevron-left']")).click();
+//		jse.executeScript("window.scrollBy(0,500)");
+//
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//a[@class='logout']")).click();
 
 	}
 

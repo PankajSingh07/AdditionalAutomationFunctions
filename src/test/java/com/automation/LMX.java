@@ -43,13 +43,12 @@ public class LMX extends Base {
 	}
 
 	@Test(priority = 2)
-	public void products() throws InterruptedException {
+	public static void products() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		// WebElement element =
 		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Products')]")));
 
-		WebElement element = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Products')]")));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Products')]")));
 		element.click();
 //		driver.findElement(By.xpath("//a[contains(text(),'Products')]")).click();	
 //		
@@ -60,8 +59,7 @@ public class LMX extends Base {
 	public void experiences() throws InterruptedException {
 
 		WebDriverWait wait = new WebDriverWait(driver, 15);
-		WebElement element = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Experiences')]")));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Experiences')]")));
 		element.click();
 
 //		driver.findElement(By.xpath("//a[contains(text(),'Experiences')]")).click();	
